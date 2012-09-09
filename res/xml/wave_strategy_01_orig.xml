@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wavestrategy>
+<!--
+    <creepConfigs>
+        <creepConfig id="VERY_TINY_DARK_KNIGHT" resists="CreepConstants.CREEP_RESIST_PHYSICAL_10" speed="CreepConstants.CREEP_SPEED_SLOW" sprite="CreepSprites.DARK_KNIGHT" scale="CreepConstants.CREEP_SCALE_VERY_TINY" spriteRed="1" spriteGreen="1" spriteBlue="1" spriteAlpha="1" />
+        <creepConfig id="VERY_TINY_WHITE_VIKING" resists="CreepConstants.CREEP_RESIST_PHYSICAL_10" speed="CreepConstants.CREEP_SPEED_SLOW" sprite="CreepSprites.WHITE_VIKING" scale="CreepConstants.CREEP_SCALE_VERY_TINY" />
+
+	
+		    VERY_TINY_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_10),
+		    VERY_TINY_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_10),
+		    VERY_TINY_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_10),
+		    VERY_TINY_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_10),
+	
+	    TINY_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_20),
+	    TINY_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_20),
+	    TINY_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_20),
+	    TINY_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_20),
+	    TINY_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_20),
+	
+	    VERY_SMALL_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_30),
+	    VERY_SMALL_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_30),
+	    VERY_SMALL_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_30),
+	    VERY_SMALL_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_30),
+	    VERY_SMALL_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_30),
+	
+	    SMALL_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_40),
+	    SMALL_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_40),
+	    SMALL_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_40),
+	    SMALL_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_40),
+	    SMALL_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_40),
+	
+	    MEDIUM_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_50),
+	    MEDIUM_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_50),
+	    MEDIUM_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_50),
+	    MEDIUM_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_50),
+	    MEDIUM_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_50),
+	
+	    LARGE_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_60),
+	    LARGE_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_60),
+	    LARGE_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_60),
+	    LARGE_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_60),
+	    LARGE_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_60),
+	
+	    VERY_LARGE_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_70),
+	    VERY_LARGE_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_70),
+	    VERY_LARGE_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_70),
+	    VERY_LARGE_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_70),
+	    VERY_LARGE_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_70),
+	
+	    HUGE_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_80),
+	    HUGE_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_80),
+	    HUGE_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_80),
+	    HUGE_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_80),
+	    HUGE_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_80),
+	
+	    VERY_HUGE_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_90),
+	    VERY_HUGE_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_90),
+	    VERY_HUGE_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_90),
+	    VERY_HUGE_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_90),
+	    VERY_HUGE_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_90),
+	
+	    GIANT_DARK_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.DARK_KNIGHT, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_95),
+	    GIANT_BLUE_KNIGHT(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_KNIGHT, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_95),
+	    GIANT_WHITE_VIKING(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_VIKING, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_95),
+	    GIANT_BLUE_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.BLUE_ARCHER, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_95),
+	    GIANT_GREEN_ARCHER(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_ARCHER, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_PHYSICAL_95),
+	
+	    // WIZARDS
+	    VERY_TINY_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_10),
+	    VERY_TINY_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_10),
+	    VERY_TINY_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_10),
+	    VERY_TINY_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_10),
+	
+	    TINY_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_20),
+	    TINY_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_20),
+	    TINY_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_20),
+	    TINY_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_20),
+	
+	    VERY_SMALL_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_30),
+	    VERY_SMALL_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_30),
+	    VERY_SMALL_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_30),
+	    VERY_SMALL_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_VERY_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_30),
+	
+	    SMALL_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_40),
+	    SMALL_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_40),
+	    SMALL_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_40),
+	    SMALL_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_SMALL, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_40),
+	
+	    MEDIUM_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_50),
+	    MEDIUM_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_50),
+	    MEDIUM_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_50),
+	    MEDIUM_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_MEDIUM, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_50),
+	
+	    LARGE_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_60),
+	    LARGE_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_60),
+	    LARGE_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_60),
+	    LARGE_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_60),
+	
+	    VERY_LARGE_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_70),
+	    VERY_LARGE_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_70),
+	    VERY_LARGE_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_70),
+	    VERY_LARGE_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_VERY_LARGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_70),
+	
+	    HUGE_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_80),
+	    HUGE_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_80),
+	    HUGE_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_80),
+	    HUGE_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_80),
+	
+	    VERY_HUGE_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_90),
+	    VERY_HUGE_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_90),
+	    VERY_HUGE_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_90),
+	    VERY_HUGE_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_VERY_HUGE, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_90),
+	
+	    GIANT_POOR_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.POOR_WIZARD, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_95),
+	    GIANT_WHITE_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.WHITE_WIZARD, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_95),
+	    GIANT_GREEN_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.GREEN_WIZARD, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_95),
+	    GIANT_RED_WIZARD(CreepConstants.CREEP_SPEED_SLOW, CreepSprites.RED_WIZARD, CreepConstants.CREEP_SCALE_GIANT, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_MAGICAL_95),
+	
+	    // BOSSES
+	    VERY_TINY_GREEN_TROLL(CreepConstants.CREEP_SPEED_TURTLE, CreepSprites.GREEN_TROLL, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_BOTH_10),
+	    VERY_TINY_ICE_TROLL(CreepConstants.CREEP_SPEED_TURTLE, CreepSprites.ICE_TROLL, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_BOTH_10),
+	    VERY_TINY_LAVA_TROLL(CreepConstants.CREEP_SPEED_TURTLE, CreepSprites.LAVA_TROLL, CreepConstants.CREEP_SCALE_VERY_TINY, 1f, 1f, 1f, 1f, CreepConstants.CREEP_RESIST_BOTH_10),
+    </creepConfigs>
+ -->
+    <waves>
+        <!--
+        <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.5" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.5" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay=".5" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+        <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+        <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+        
+        
+        
+         
+        <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" lifebonus=".25">
+                    <resist type="physical" amount=".99" />
+                    <resist type="magical" amount=".99" />
+                </creep>
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+        <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+        <wave repeat="false">
+            <creeps>
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay=".25" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_GREEN_TROLL" count="1" delay=".25" />
+            </creeps>
+        </wave>
+        <wave repeat="true">
+            <creeps>
+                <creep type="VERY_TINY_LAVA_TROLL" count="3" delay=".25" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_GREEN_TROLL" count="3" delay=".25" />
+            </creeps>
+        </wave>
+        
+            public CreepConfiguration(
+            final float pSpeed,
+
+            final CreepSprites pSprite,
+            final float pScale,
+            final float pSpriteRed,
+            final float pSpriteGreen,
+            final float pSpriteBlue,
+            final float pSpriteAlpha,
+
+            final DamageResists pDamageResists) {
+        
+         
+                     final float pSpeed,
+
+            final CreepSprites pSprite,
+            final float pScale,
+            final float pSpriteRed,
+            final float pSpriteGreen,
+            final float pSpriteBlue,
+            final float pSpriteAlpha,
+
+            final DamageResists pDamageResists,
+         
+         CreepSprites.LAVA_TROLL
+         
+         -->
+         
+         <wave>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" />
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+            <creeps>
+                <creep type="VERY_TINY_DARK_KNIGHT" count="4" delay="3.0" lifebonus=".25">
+                    <resist type="physical" amount=".99" />
+                    <resist type="magical" amount=".99" />
+                </creep>
+                <creep type="VERY_TINY_POOR_WIZARD" count="2" delay="2.0" />
+                <creep type="VERY_TINY_LAVA_TROLL" count="1" delay="1.0" />
+            </creeps>
+        </wave>
+         
+    </waves>
+</wavestrategy>

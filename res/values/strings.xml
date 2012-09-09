@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Epiris Tower Defense</string>
+    <string name="mainmenu_ticker">Welcome to EpicaryTD, this game is under dev if you dont like it then suck my nice fat one please</string>
+    <string name="back">Back</string>
+    <string name="reset_statistics">Reset Statistics</string>
+    <string name="reset_achievements">Reset Achievements</string>
+    <string name="reset_rewards">Reset Rewards</string>
+    <string name="new_game">New Game</string>
+    <string name="resume">Resume</string>
+    <string name="ok">Ok</string>
+    <string name="play_mode_conquer_title">Conquer</string>
+    <string name="play_mode_conquer_description">Begin a conquest through different maps and challenges to conquer your enemies. After defeating each level you have a chance to go back later to unlock achievements and obtain higher scores.</string>
+    <string name="play_mode_penny_pincher_description">Your enemy knows no bounds, the onslaught of forces will never tire, your defenses will ultimately fail... it is just a matter of how long you can survive.</string>
+    <string name="play_mode_penny_pincher_title">Penny Pincher</string>
+    <string name="play_mode_survival_description">Your enemy knows no bounds, the onslaught of forces will never tire, your defenses will ultimately fail... it is just a matter of how long you can survive.</string>
+    <string name="play_mode_survival_title">Survival Mode</string>
+    <string name="play_description">Below are a list of game modes, each provide there own unique challenges and offer different levels of enjoyment for different play styles.</string>
+    <string name="play_title">Play</string>
+    
+    <string name="play_conquer_choose_level">Choose Level</string>
+    <string name="play_conquer_choose_difficulty">Choose Difficulty</string>
+    <string name="play_conquer_game_options_title">Game Options</string>
+    <string name="play_conquer_title">Conquer Mode</string>
+    <string name="play_conquer_description">Below are the options for the conquer play mode. Once you are ready click the \"Play Now\" button below.</string>
+    <string name="play_conquer_play_now">Play Now</string>
+    
+    <string name="play_survival_choose_map">Choose Map</string>
+    <string name="play_survival_choose_difficulty">Choose Difficulty</string>
+    <string name="play_survival_game_options_title">Game Options</string>
+    <string name="play_survival_title">Survival Mode</string>
+    <string name="play_survival_description">Below are the options for the survival play mode. Once you are ready click the \"Play Now\" button below.</string>
+    <string name="play_survival_play_now">Play Now</string>
+    
+    <string name="help">Help</string>
+    <string name="quit">Quit</string>
+    <string name="home">Home</string>
+</resources>

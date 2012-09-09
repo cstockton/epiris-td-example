@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:id="@+id/play_wrapper"
+
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="horizontal"
+        android:background="@android:drawable/bottom_bar"
+        
+        android:paddingLeft="4.0dip"
+        android:paddingBottom="1.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingTop="5.0dip">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/play_title" />
+        <Button
+            android:id="@+id/button_back"
+        
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            
+            android:text="@string/back" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        
+        android:background="@android:drawable/bottom_bar"
+        android:orientation="horizontal"
+        
+        android:paddingLeft="4.0dip"
+        android:paddingTop="5.0dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="1.0dip">
+        <TextView
+            android:layout_width="0dp" 
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            
+            android:textColor="@color/BLACK"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/play_description"></TextView>
+    </LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            
+            android:paddingLeft="4.0dip"
+            android:paddingTop="4.0dip"
+            android:paddingRight="4.0dip"
+            android:paddingBottom="4.0dip">
+
+
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+    
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="vertical"
+                
+                android:paddingLeft="4.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="4.0dip">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal"
+                    
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1.0"
+                        
+                        android:gravity="center_vertical|center_horizontal|left" 
+                        
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/play_mode_conquer_title" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip">
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:orientation="horizontal"
+	                    android:gravity="center">
+	                    <Button
+	                        android:id="@+id/play_mode_conquer_new_game" 
+	                        
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        
+	                        android:text="@string/new_game" />
+	                </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="left"
+                        
+                        android:textColor="@color/BLACK"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/play_mode_conquer_description" />
+                </LinearLayout>
+
+            </LinearLayout>
+             -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+    
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="vertical"
+                
+                android:paddingLeft="4.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="4.0dip">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal"
+                    
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1.0"
+                        
+                        android:gravity="center_vertical|center_horizontal|left" 
+                        
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/play_mode_survival_title" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                
+	                android:paddingLeft="4.0dip"
+	                android:paddingTop="4.0dip"
+	                android:paddingRight="4.0dip"
+	                android:paddingBottom="4.0dip">
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:orientation="horizontal"
+	                    android:gravity="center">
+	                    <Button
+	                        android:id="@+id/play_mode_survival_new_game" 
+	                        
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        
+	                        android:text="@string/new_game" />
+	                </LinearLayout>
+	                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="left"
+                        
+                        android:textColor="@color/BLACK"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/play_mode_survival_description" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+    
+                android:background="@android:drawable/bottom_bar"
+                android:orientation="vertical"
+                
+                android:paddingLeft="4.0dip"
+                android:paddingTop="4.0dip"
+                android:paddingRight="4.0dip"
+                android:paddingBottom="4.0dip">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dip"
+
+                    android:background="@android:drawable/bottom_bar"
+                    android:orientation="horizontal"
+                    
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1.0"
+                        
+                        android:gravity="center_vertical|center_horizontal|left" 
+                        
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/play_mode_penny_pincher_title" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                
+                    android:paddingLeft="4.0dip"
+                    android:paddingTop="4.0dip"
+                    android:paddingRight="4.0dip"
+                    android:paddingBottom="4.0dip">
+	                <LinearLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    
+	                    android:orientation="horizontal"
+	                    android:gravity="center">
+	                    <Button
+	                        android:id="@+id/play_mode_penny_pincher_new_game" 
+	                        
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        
+	                        android:text="@string/new_game" />
+	                </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        
+                        android:gravity="left"
+                        
+                        android:textColor="@color/BLACK"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/play_mode_penny_pincher_description" />
+                </LinearLayout>
+            </LinearLayout>
+             -->
+
+        </LinearLayout>
+	</ScrollView>
+</LinearLayout>

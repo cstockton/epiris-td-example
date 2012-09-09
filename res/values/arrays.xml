@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+	<string-array name="fpsLimit">
+		<item name="60">60 Frames Per Second</item><item name="5">5 Frames Per Second</item>
+		<item name="10">10 Frames Per Second</item>
+		<item name="25">25 Frames Per Second</item>
+		<item name="30">30 Frames Per Second</item>
+		<item name="45">45 Frames Per Second</item>
+	</string-array>
+	
+	<string-array name="fpsLimitValues">
+		<item name="60">60</item><item name="5">5</item>
+		<item name="10">10</item>
+		<item name="25">25</item>
+		<item name="30">30</item>
+		<item name="45">45</item>
+	</string-array>
+
+</resources>

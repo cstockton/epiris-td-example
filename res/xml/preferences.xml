@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory 
+        android:title="Game Options"
+        android:key="game">
+        
+        <CheckBoxPreference 
+            android:key="stop_fast_forward_after_leak"
+            android:summary="Disable Fast Forward After Leak"
+            android:title="Stop fast forwarding after leaking a creep"
+            android:defaultValue="true"
+        />
+        
+        <CheckBoxPreference 
+            android:key="stop_fast_forward_after_level"
+            android:summary="Disable Fast Forward Each Level"
+            android:title="Stop fast forwarding after finishing a level"
+            android:defaultValue="false"
+        />
+        
+
+    </PreferenceCategory>
+    
+	<PreferenceCategory 
+		android:title="Graphics"
+		android:key="graphics">
+	
+		<CheckBoxPreference 
+			android:key="enhanced_graphics"
+			android:summary="Enhanced Graphics"
+			android:title="Enable enhanced graphics (May slow performance on slower devices)" 
+			android:defaultValue="true"
+		/>
+		
+        <CheckBoxPreference 
+            android:key="enable_fps_limit"
+            android:summary="Enable Fps Limit"
+            android:title="Enable a frames per second limit, saves battery life with a visual cost" 
+            android:defaultValue="true"
+        />
+        
+		<ListPreference 
+			android:key="fps"
+			android:title="Fps Limit"
+			android:summary="You may limit your FPS to save battery life."
+			android:defaultValue="60" 
+			android:entries="@array/fpsLimit"
+			android:entryValues="@array/fpsLimitValues"
+			android:dependency="enable_fps_limit"
+		/>	
+			
+	</PreferenceCategory>
+	
+</PreferenceScreen>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+	android:id="@+id/play_wrapper" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="horizontal"
+		android:background="@android:drawable/bottom_bar" android:paddingLeft="4.0dip"
+		android:paddingBottom="1.0dip" android:paddingRight="4.0dip"
+		android:paddingTop="5.0dip">
+		<TextView android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1.0" android:textAppearance="?android:attr/textAppearanceLarge" android:text="@string/play_survival_title"/>
+		<Button android:id="@+id/button_back" android:layout_width="0.0dip"
+			android:layout_height="fill_parent" android:layout_weight="1.0"
+
+			android:text="@string/back" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:background="@android:drawable/bottom_bar"
+		android:orientation="horizontal" android:paddingLeft="4.0dip"
+		android:paddingTop="5.0dip" android:paddingRight="4.0dip"
+		android:paddingBottom="1.0dip">
+		<TextView android:layout_width="0dp" android:layout_height="wrap_content"
+			android:layout_weight="1.0" android:textColor="@color/BLACK"
+			android:textAppearance="?android:attr/textAppearanceSmall" android:text="@string/play_survival_description"></TextView>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical"
+
+			android:paddingLeft="4.0dip" android:paddingTop="4.0dip"
+			android:paddingRight="4.0dip" android:paddingBottom="4.0dip">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:background="@android:drawable/bottom_bar"
+				android:orientation="vertical" android:paddingLeft="4.0dip"
+				android:paddingTop="4.0dip" android:paddingRight="4.0dip"
+				android:paddingBottom="4.0dip">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="40dip" android:background="@android:drawable/bottom_bar"
+					android:orientation="horizontal" android:paddingLeft="4.0dip"
+					android:paddingTop="4.0dip" android:paddingRight="4.0dip"
+					android:paddingBottom="4.0dip">
+					<TextView android:layout_width="0dp"
+						android:layout_height="32dp" android:layout_weight="1.0"
+
+						android:gravity="center_vertical|center_horizontal|left"
+
+						android:textAppearance="?android:attr/textAppearanceMedium" android:text="@string/play_survival_game_options_title"/>
+				</LinearLayout>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:stretchColumns="1">
+    <TableRow android:gravity="center">
+        <TextView
+            android:padding="3dip" android:textColor="@color/BLACK" android:text="@string/play_survival_choose_map"/>
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/play_survival_map_spinner"></Spinner>
+    </TableRow>
+
+    <TableRow android:gravity="center">
+        <TextView
+            android:padding="3dip" android:gravity="center" android:textColor="@color/BLACK" android:text="@string/play_survival_choose_difficulty"/>
+        <Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/play_survival_difficulty_spinner"></Spinner>
+    </TableRow>
+</TableLayout>
+<Button android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/play_survival_play_now" android:id="@+id/play_survival_play_now_button"></Button>
+
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

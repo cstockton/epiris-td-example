@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="epiris.tower.defense.cstockton.org"
+      android:installLocation="preferExternal"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/icon">
+        <activity android:name=".ETDMainMenu"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDRewards" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDStatistics" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDAchievements" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDSettings" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDCredits" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDPreferences" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDGameMenu" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDPlay" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDPlaySurvival" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDPlayConquer" android:screenOrientation="landscape" android:configChanges="orientation"/>
+        <activity android:name="epiris.tower.defense.cstockton.org.ETDGameActivity" android:screenOrientation="landscape" android:configChanges="orientation"/>
+    </application>
+</manifest>
