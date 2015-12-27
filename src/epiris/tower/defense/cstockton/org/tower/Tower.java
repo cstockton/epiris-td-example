@@ -348,7 +348,7 @@ public class Tower extends TiledSprite implements ITower, ISpellCaster, ISpellLi
             final int steps = mTowerType.getTowerTopSprite().getRotationTileIndexLength();
 
             if(mTowerType.getTowerTopSprite().getRotationTileMirror()) {
-                final float tileIndex = FloatMath.ceil(pRotation / (360 / (steps * 2)));
+                final float tileIndex = (float)Math.ceil(pRotation / (360 / (steps * 2)));
 
                 if(tileIndex > steps) {
                     final int ti = (int) (steps - (tileIndex - steps));
@@ -359,7 +359,7 @@ public class Tower extends TiledSprite implements ITower, ISpellCaster, ISpellLi
                     getTextureRegion().setFlippedHorizontal(true);
                 }
             } else {
-                final int pos = (int) FloatMath.floor(pRotation / (360 / steps));
+                final int pos = (int) Math.floor(pRotation / (360 / steps));
 
                 if(pos == 0) {
                     setCurrentTileIndex(mTowerType.getTowerTopSprite().getRotationTileIndexStart());

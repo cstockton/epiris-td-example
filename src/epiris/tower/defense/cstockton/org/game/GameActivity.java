@@ -32,7 +32,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.preference.PreferenceManager;
-import android.util.FloatMath;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -765,7 +764,7 @@ public class GameActivity extends BaseGameActivity implements IOnSceneTouchListe
 
             @Override
             public void onTaskDue(final float pSecondsElapsed) {
-                    Registry.sPlayerStatistics.addStatistic(PlayerStatisticTypes.TOTAL_SECONDS_PLAYED, (int) FloatMath.floor(pSecondsElapsed));
+                    Registry.sPlayerStatistics.addStatistic(PlayerStatisticTypes.TOTAL_SECONDS_PLAYED, (int) Math.floor(pSecondsElapsed));
 
                     Registry.sPlayerStatistics.save();
                     Registry.sPlayerAchievements.save();

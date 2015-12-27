@@ -69,7 +69,7 @@ public enum MovementSpellAffectTypes implements ISpellAffects {
         affect.setStackId(mStackId);
         affect.setStackCount(1);
         affect.setTickInterval(.15f);
-        affect.setTickCount((int) FloatMath.ceil(mDuration / .15f));
+        affect.setTickCount((int) Math.ceil(mDuration / .15f));
 
         return affect;
     }

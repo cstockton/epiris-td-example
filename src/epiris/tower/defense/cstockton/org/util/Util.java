@@ -26,7 +26,7 @@ public class Util {
             return Float.toString((float) round((double) amount / 1000, 2, BigDecimal.ROUND_HALF_UP)) + "K";
 
         } else {
-            return Integer.toString((int) FloatMath.ceil(amount));
+            return Integer.toString((int) Math.ceil(amount));
 
         }
     }
@@ -46,7 +46,8 @@ public class Util {
     public static float distance(final float pX1, final float pY1, final float pX2, final float pY2) {
         final float dX = pX2 - pX1;
         final float dY = pY2 - pY1;
-        return FloatMath.sqrt((dX * dX) + (dY * dY));
+        final float dist = (dX * dX) + (dY * dY);
+        return (float)Math.sqrt(dist);
     }
 
     /**

@@ -34,7 +34,7 @@ public enum FreedomSpellAffectTypes implements ISpellAffects {
         affect.setStackId(this.name());
         affect.setStackCount(1);
         affect.setTickInterval(1f);
-        affect.setTickCount((int) FloatMath.ceil(mDuration / 1f));
+        affect.setTickCount((int) Math.ceil(mDuration / 1f));
 
         return affect;
     }

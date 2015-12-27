@@ -48,7 +48,7 @@ public class CreepLifeBar extends Rectangle {
         setVisible(false);
 
         // attack the life bar number
-        mLifeNumber = new ChangeableText(1, 1, Registry.sFontWhite12, Integer.toString((int) FloatMath.ceil(mLifeRemaining)), 9);
+        mLifeNumber = new ChangeableText(1, 1, Registry.sFontWhite12, Integer.toString((int) Math.ceil(mLifeRemaining)), 9);
         mLifeNumber.setVisible(false);
         mLifeNumber.setColor(0f, 0f, 0f);
 

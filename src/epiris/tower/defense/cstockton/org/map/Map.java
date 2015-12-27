@@ -12,8 +12,6 @@ import org.anddev.andengine.opengl.texture.region.TextureRegion;
 import epiris.tower.defense.cstockton.org.config.MapTypes;
 import epiris.tower.defense.cstockton.org.game.GameLayer;
 import epiris.tower.defense.cstockton.org.object.Registry;
-import epiris.tower.defense.cstockton.org.util.Debug;
-import android.util.FloatMath;
 
 public class Map {
 
@@ -347,7 +345,8 @@ public class Map {
 
                                 final float dXa = pToTileColumn - neighborTileColumn;
                                 final float dYa = pToTileRow - neighborTileRow;
-                                neighbor.mExpectedRestCost = FloatMath.sqrt(dXa * dXa + dYa * dYa);
+                                final float dDi = (float)(dXa * dXa + dYa * dYa);
+                                neighbor.mExpectedRestCost = (float)Math.sqrt(dDi);
 
                                 currentDepth = Math.max(currentDepth, neighbor.setParent(current));
                                 openNodes.add(neighbor);
